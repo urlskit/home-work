@@ -1,0 +1,37 @@
+body{
+	background: lime;
+	color: green;
+}
+div{
+	outline: 2px solid black;
+	background: yellowgreen;
+}
+.general{
+	width: 1200px;
+	margin: 0 auto;
+}
+.flex{
+	background: lime;
+	display: flex;
+}
+.in_400{
+	background: orange;
+	width: 400px;
+}
+.in_800{
+	background: yellow;
+	width: 800px;
+}
+.flex_column{
+	background: lime;
+	flex-direction: column;
+}
+.flex_row{
+	background: lime;
+	flex-direction: row;
+	display: flex;
+}
+
+
+
+

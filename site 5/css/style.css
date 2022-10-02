@@ -1,0 +1,38 @@
+body{
+	background: lime;
+	color: green;
+}
+div{
+	outline: 2px solid black;
+}
+.font-s{
+font-size: 0;
+}
+.general{
+	width: 1200px;
+	margin: 0 auto;
+}
+.inl_400{
+	background: orange;
+	width: 400px;
+	display: inline-block;
+	font-size: 18px;
+}
+.inl_800{
+	background: yellow;
+	width: 800px;
+	display: inline-block;
+	font-size: 18px;
+}
+.in_400{
+	background: orange;
+	width: 400px;
+	display: table-cell;
+}
+.in_800{
+	background: yellow;
+	width: 800px;
+	display: table-cell;
+}
+
+

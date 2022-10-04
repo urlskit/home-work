@@ -10,28 +10,60 @@ div{
 	width: 1200px;
 	margin: 0 auto;
 }
-.flex{
+.grid_3x400{
 	background: lime;
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(3, 400px);
 }
-.in_400{
+.grid_2x400{
+	background: lime;
+	display: grid;
+	grid-template-columns: repeat(2, 400px);
+}
+.grid_800-400{
 	background: orange;
-	width: 400px;
+	display: grid;
+	grid-template-columns: 800px 400px;
 }
-.in_800{
-	background: yellow;
-	width: 800px;
+.grid_400-800{
+	background: orange;
+	display: grid;
+	grid-template-columns: 400px 800px;
 }
-.flex_column{
-	background: lime;
-	flex-direction: column;
+.area-t{
+	width: 1200px;
+	margin: 0 auto;
+	background: orange;
+	display: grid;
+	grid-template-areas: 
+	"A B C" 
+	"D D F" 
+	"D D G" 
+	"E E G" 
+	"E E H";
 }
-.flex_row{
-	background: lime;
-	flex-direction: row;
-	display: flex;
+.1{
+	grid-area: A;
 }
-
-
-
+.2{
+	grid-area: B;
+}
+.3{
+	grid-area: C;
+}
+.4{
+	grid-area: D;
+}
+.5{
+	grid-area: F;
+}
+.6{
+	grid-area: G;
+}
+.7{
+	grid-area: E;
+}
+.8{
+	grid-area: H;
+}
 

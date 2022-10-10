@@ -40,10 +40,11 @@ h1,h2,h3{
 	left: 0;
 	top: 50%;
 	margin-top: -90px;
-	background: rgba(0, 0, 0, .7);
+	background: rgba(255, 211, 0, .7);
 	border: 5px solid;
 	width: 100px;
-	height: 180px;
+	height: 210px;
 	font-size: 25px;
+	color: red;
 
 }

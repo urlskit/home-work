@@ -1,11 +1,71 @@
+/* reset begin */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* reset end */
+
+
+/* common begin */
 body{
 	background: lime;
 	color: green;
+	padding: 20px;
 }
+.general{
+	width: 1200px;
+	margin: 0 auto;
+}
+.general div{
+	outline: 2px solid black;
+	/* background: yellowgreen; */
+}
+/* common end */
+
+/* menu begin */
 .wrapper{
 	width: 1200px;
 	margin: 0 auto;
-	text-align: center;
+	
 }
 ul{
 	font-size: 0;
@@ -15,6 +75,7 @@ ul li{
 	display: inline-block;
 	background: orange;
 	font-size: 25px;
+	width: 0px;
 	position: relative;
 }
 ul li:hover{
@@ -33,7 +94,7 @@ ul li a{
 ul ul{
 	position: absolute;
 	top: 100%;
-	right: 0;
+	left: 0;
 	display: none;
 }
 ul ul li{
@@ -42,3 +103,228 @@ ul ul li{
 ul li:hover ul{
 	display: block;
 }
+/* menu end */
+
+/* gallery&anchor begin */
+img{
+	width: 500px;
+	height: 333px;
+}
+p{
+	font-size: 25px;
+	text-align: justify;
+}
+h1,h2,h3{
+	font-size: 30px;
+	text-align: center;
+}
+.wrapper{
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+.i_block{
+	display: inline-block;
+	font-size: 0;
+	padding: 15px;
+}
+.img{
+	position: relative;
+	display: inline-block;
+	margin: 0 5px;
+}
+.text{
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	background-color: rgba(255, 110, 0, 0.7);
+	font-size: 30px;
+	width: 100%;
+	height: 40px;
+}
+.menu{
+	position: fixed;
+	left: 0;
+	top: 50%;
+	margin-top: -90px;
+	background: rgba(255, 211, 0, .7);
+	border: 5px solid;
+	width: 100px;
+	height: 210px;
+	font-size: 25px;
+	color: red;
+}
+.menu>div{
+	padding: 2px;
+}
+.link{
+	padding: 15px;
+}
+/* gallery&anchor end */
+
+/* grid begin */
+.grid_3x400{
+	background: lime;
+	display: grid;
+	grid-template-columns: repeat(3, 400px);
+}
+.grid_2x400{
+	background: lime;
+	display: grid;
+	grid-template-columns: repeat(2, 400px);
+}
+.grid_800-400{
+	background: orange;
+	display: grid;
+	grid-template-columns: 800px 400px;
+}
+.grid_400-800{
+	background: orange;
+	display: grid;
+	grid-template-columns: 400px 800px;
+}
+.area-t{
+	width: 1200px;
+	margin: 0 auto;
+	background: orange;
+	display: grid;
+	border: 2px solid black;
+	grid-template-areas: 
+	"A B C" 
+	"D D F" 
+	"D D G" 
+	"E E G" 
+	"E E H" "I J J" "I K L" "M M N" "O P N" "Q P N";
+}
+.g1{
+	grid-area: A;
+}
+.g2{
+	grid-area: B;
+}
+.g3{
+	grid-area: C;
+}
+.g4{
+	grid-area: D;
+}
+.g5{
+	grid-area: F;
+}
+.g6{
+	grid-area: G;
+}
+.g7{
+	grid-area: E;
+}
+.g9{
+	grid-area: I;
+}
+.g10{
+	grid-area: J;
+}
+.g11{
+	grid-area: K;
+}
+.g12{
+	grid-area: L;
+}
+.g13{
+	grid-area: M;
+}
+.g14{
+	grid-area: N;
+}
+.g15{
+	grid-area: O;
+}
+.g16{
+	grid-area: P;
+}
+.g17{
+	grid-area: Q;
+}
+.g1,.g2,.g3,.g4,.g5,.g6,.g7,.g8,.g9,.g10,.g11,.g12,.g13,.g14,.g15,.g16,.g17{
+	outline: 1px solid black;
+}
+/* grid end */
+
+/* float begin */
+.flex{
+	background: lime;
+	display: flex;
+}
+.in_400{
+	background: orange;
+	width: 400px;
+}
+.in_800{
+	background: yellow;
+	width: 800px;
+}
+.flex_column{
+	background: lime;
+	flex-direction: column;
+}
+.flex_row{
+	background: lime;
+	flex-direction: row;
+	display: flex;
+}
+/* float end */
+
+/* after begin */
+body{
+	background: lime;
+	color: green;
+}
+.clearfix:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.in_400_af{
+	background: orange;
+	width: 400px;
+	float: left;
+}
+.in_800_af{
+	background: yellow;
+	width: 800px;
+	float: left;
+}
+/* after end */
+
+/* inline-block&t-cell begin */
+.font-s{
+font-size: 0;
+}
+.general{
+	width: 1200px;
+	margin: 0 auto;
+}
+.inl_400{
+	background: orange;
+	width: 400px;
+	display: inline-block;
+	font-size: 18px;
+}
+.inl_800{
+	background: yellow;
+	width: 800px;
+	display: inline-block;
+	font-size: 18px;
+}
+.in_400_tc{
+	background: orange;
+	width: 400px;
+	display: table-cell;
+}
+.in_800_tc{
+	background: yellow;
+	width: 800px;
+	display: table-cell;
+}
+/* inline-block&t-cell end */
+
+

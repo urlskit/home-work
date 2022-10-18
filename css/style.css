@@ -59,6 +59,50 @@ body{
 	outline: 2px solid black;
 	background: yellowgreen;
 }
+
+
+.social{
+	font-size: 0;
+}
+.social li{
+	display: inline-block;
+	font-size: 25px;
+}
+.social ul li a{
+	height: 50px;
+	width: 50px;
+	display: block;
+}
+.bg-facebook {
+    width: 50px; height: 50px;
+    background: url('../images/css_sprites.png') -10px -10px;
+    border: none;
+}
+.bg-facebook:hover {
+    width: 50px; height: 50px;
+    background: url('../images/css_sprites.png') -10px -10px;
+    border: none;
+}
+.bg-insta {
+    width: 50px; height: 50px;
+    background: url('../images/css_sprites.png') -80px -10px;
+    border: none;
+}
+.bg-insta:hover{
+    width: 50px; height: 50px;
+    background: url('../images/css_sprites.png') -80px -10px;
+    border: none;
+}
+.bg-li {
+    width: 50px; height: 50px;
+    background: url('../images/css_sprites.png') -150px -10px;
+    border: none;
+}
+.bg-li:hover {
+    width: 50px; height: 50px;
+    background: url('../images/css_sprites.png') -150px -10px;
+    border: none;
+}
 /* common end */
 
 /* menu begin */

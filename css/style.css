@@ -75,7 +75,7 @@ ul li{
 	display: inline-block;
 	background: orange;
 	font-size: 25px;
-	width: 0px;
+	width: 250px;
 	position: relative;
 }
 ul li:hover{
@@ -97,13 +97,27 @@ ul ul{
 	left: 0;
 	display: none;
 }
+ul ul ul{
+	position: absolute;
+	top: 0;
+	left: 100%;
+	display: none;
+}
+/* меню 3 уровень на нём закончил*/
+.menu_left{
+	position: absolute;
+	bottom: 0;
+    right: 100%;
+	display: none;
+}
+
 ul ul li{
 	border: none;
 }
-ul li:hover ul{
+ul li:hover>ul{
 	display: block;
 }
-/* menu end */
+/* ----- menu end ----- */
 
 /* gallery&anchor begin */
 img{
